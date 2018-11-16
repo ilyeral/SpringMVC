@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Spring MVC表单处理之-密码</title>
+
+</head>
+<body>
+
+<h2>提交的用户信息</h2>
+<p id="id">
+    JavaScript 能改变 HTML 元素的内容。
+</p>
+<p id="name">
+    JavaScript 能改变 HTML 元素的内容。
+</p>
+<p id="ss">
+    JavaScript 能改变 HTML 元素的内容。
+</p>
+</table>
+<script>
+    function asda()
+    {
+        var lista='<%=request.getAttribute("s")%>';
+        //var b=JSON.parse(lista);
+        // var x=document.getElementById("id");  // 找到元素
+        // x.innerHTML=lista[0].id;    // 改变内容
+        var y=document.getElementById("name");  // 找到元素
+        y.innerHTML="aaaa";    // 改变内容
+        var z=document.getElementById("ss");  // 找到元素
+        z.innerHTML=lista;    // 改变内容
+    }
+</script>
+<button type="button" onclick="asda()">点击这里</button>
+
+</body>
+</html>
